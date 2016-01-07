@@ -5,12 +5,11 @@ This is a project predict face landmarks (68 points) and head pose (3d pose, yaw
 ## Install
 - [caffe](https://github.com/BVLC/caffe)
 - [dlib face detector](http://dlib.net/)<p>
-- opencv<p>
 cd your dlib folder<p>
 cd python_example<p>
 ./compile_dlib_python_module.bat<p>
  add dlib.so to the python path<p>
-
+- opencv<p>
 ## Usage
 
 - Command : python landmarkPredict.py predictImage  testList.txt<p>
