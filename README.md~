@@ -18,7 +18,7 @@ Command : python landmarkPredict.py predictImage  testList.txt<p>
 
 ## Model
 
-you can download the pre-trained model from [here](http://pan.baidu.com/s/1mhf274c) 
+you can download the pre-trained model from [here](https://github.com/BVLC/caffe) http://pan.baidu.com/s/1mhf274c
 
 ## Result
 ![](result/1.png)
