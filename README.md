@@ -5,7 +5,7 @@ This is a project predict face landmarks (68 points) and head pose (3d pose, yaw
 ## Install
 - [caffe](https://github.com/BVLC/caffe)
 - [dlib face detector](http://dlib.net/)<p>
-you can down [dlib18.17](http://pan.baidu.com/s/1mhf274c) <p>
+you can down [dlib18.17](http://pan.baidu.com/s/1gey9Wd1) <p>
 cd your dlib folder<p>
 cd python_example<p>
 ./compile_dlib_python_module.bat<p>
