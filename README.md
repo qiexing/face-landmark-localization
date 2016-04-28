@@ -21,7 +21,7 @@ if using dlib18.18, you can follow the [official instruction](http://dlib.net/)
 
 ## Model
 
-- You can download the pre-trained model from [here](http://pan.baidu.com/s/1mhf274c) 
+- You can download the pre-trained model from [here](http://pan.baidu.com/s/1c14aFyK)  
 
 ## Result
 ![](result/1.png)
