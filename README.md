@@ -21,7 +21,7 @@ if using dlib18.18, you can follow the [official instruction](http://dlib.net/)
 
 ## Model
 
-- You can download the pre-trained model from [here](http://pan.baidu.com/s/1c14aFyK)  
+- You can download the pre-trained model from [dropbox](https://www.dropbox.com/s/z89prwhg0jpgp47/68point_dlib_with_pose.caffemodel?dl=0) or [baidu yun](http://pan.baidu.com/s/1c14aFyK)
 
 ## Result
 ![](result/1.png)
