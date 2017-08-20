@@ -1,4 +1,3 @@
-
 #usage :python landmarkPredict.py predictImage  testList.txt
 
 import os
@@ -31,7 +30,7 @@ def recover_coordinate(largetBBox, facepoint, width, height):
     cut_height = largetBBox[3] - largetBBox[2]
     scale_x = cut_width*1.0/width;
     scale_y = cut_height*1.0/height;
-    point[0::2]=[float(j * scale_x + largetBBox[0]) for j in facepoint[0::2]] 
+    point[0::2]=[float(j * scale_x + largetBBox[0]) for j in facepoint[0::2]]
     point[1::2]=[float(j * scale_y + largetBBox[2]) for j in facepoint[1::2]]
     return point
 
@@ -73,7 +72,7 @@ def getRGBTestPart(bbox,left,right,top,bottom,img,height,width):
     # cv2.rectangle(img, (int(retiBBox[0]), int(retiBBox[2])), (int(retiBBox[1]), int(retiBBox[3])), (0,0,255), 2)
     # cv2.imshow('f',img)
     # cv2.waitKey(0)
-    face=img[retiBBox[2]:retiBBox[3],retiBBox[0]:retiBBox[1],:]
+    face = img[int(retiBBox[2]):int(retiBBox[3]), int(retiBBox[0]):int(retiBBox[1]), :]
     face = cv2.resize(face,(height,width),interpolation = cv2.INTER_AREA)
     face=face.astype('float32')
     return face
@@ -137,16 +136,6 @@ def getCutSize(bbox,left,right,top,bottom):   #left, right, top, and bottom
     cut_size[3] = bbox[3] + (bottom-1) * box_height
     return cut_size
 
-
-def getFaceImage(image,bboxs,left,right,top,bottom,height,width):
-    num = bboxs.shape[0]
-    faces = np.zeros((num,channels,height,width))
-    for i in range (0,num):
-        faces[i] = getTestPart(bboxs[i],left,right,top,bottom,image,height,width)/255.0
-        print faces[i].shape
-        # cv2.imshow('f',faces[i][0])
-        #  cv2.waitKey(0)
-    return faces
 
 def detectFace(img):
     detector = dlib.get_frontal_face_detector()
